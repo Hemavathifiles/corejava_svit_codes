@@ -1,39 +1,21 @@
 package org.tnsif.sf.c2tc.oops;
 
-class Human
+class Human1
 {
-	private int age;
-	private String name;
-	
-	
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	int age;
+	String name;
 }
+
+
 public class BeforeEncapsulation {
 
 	public static void main(String[] args) {
-		Human obj=new Human();
-		obj.setAge(12);
-		obj.setName("Neha");
-		System.out.println(obj.getAge());
-		System.out.println(obj.getName());
-		
-		obj.setAge(16);
-		obj.setName("hema");
-		System.out.println(obj.getAge());
-		System.out.println(obj.getName());
-		
-
+		Human1 obj=new Human1();
+		obj.age=26;
+		obj.name="hema";
+		obj.age=87;
+		obj.name="sushma";
+		System.out.println("Age " +obj.age + " "+ "Name "+obj.name);
 	}
 
 }
